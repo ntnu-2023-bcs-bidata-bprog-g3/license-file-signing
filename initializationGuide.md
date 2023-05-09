@@ -26,7 +26,7 @@ This is done through:
                  -pubkey -noout > rootpub.pem
     ```
 3. The private key (rootkey.pem) is kept in a secure place, the certificate (rootcert.cert) is distributed to the license file aggregator, and the public key (pubkey.pem) is distributed to the network management system. These are being used to cerify the origin of license signatures at a later time.
-4. **Add part where root pubkey is added to LFA in the correct place** 
+4. **Add part where root certificate is added to LFA in the correct place** 
 
 ## Network Management System Intermediate Key Pair
 
@@ -54,7 +54,7 @@ This is done through:
     ``` 
     ***NOTE! I get error at this point: variable lookup failed for ca::default_ca***
 
-    The intermediate key and certificate is to be distributed to the network management system.
+    The intermediate key and intermediate certificate is to be distributed to the network management system.
 
 4. **Add part where keystore is created, etc.**
 
