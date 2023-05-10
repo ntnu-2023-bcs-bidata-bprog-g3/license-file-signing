@@ -2,9 +2,9 @@
 
 ## Background 
 
-This guide is written as a part of the proof of concept, written as a aprt of a bachelor project in Computer Science at NTNU Gjøvik, during the spring of 2023.
+This guide is written as a part of the proof of concept, written as a part of a bachelor project in Computer Science at NTNU Gjøvik, during the spring of 2023.
 
-In order to use the system of OLM implemented proof of concept, a set of keys and certificates are necessary. This guide will go through the steps necessary, in order to start, run and use the applications.
+In order to use the demonstration of an OLM system, a set of keys and certificates are necessary. This guide will go through the steps necessary, in order to start, run and use the applications.
 
 ## License Company Root Key Pair
 
@@ -25,8 +25,8 @@ This is done through:
     openssl x509 -in rootcert.crt \
                  -pubkey -noout > rootpub.pem
     ```
-3. The private key (rootkey.pem) is kept in a secure place, the certificate (rootcert.crt) is distributed to the license file aggregator (follow steps below), and the public key (pubkey.pem) is distributed to the network management system (follow steps below). These are being used to cerify the origin of license signatures at a later time.
-4. Update the NMS source code file named "CustomerConstants.java", and replace the current root public key with the updated one, with the exact format.
+3. The private key (rootkey.pem) is kept in a secure place, the certificate (rootcert.crt) is distributed to the license file aggregator (follow steps below), and the public key (rootpub.pem) is distributed to the network management system (follow steps below). These are being used to cerify the origin of license signatures at a later time.
+4. Update the NMS source code file named "CustomerConstants.java" located in `src/main/java/no/ntnu/nms/CustomerConstants.java`, and replace the current root public key with the updated one, in the exact same format.
 
 ## Network Management System Intermediate Key Pair
 
