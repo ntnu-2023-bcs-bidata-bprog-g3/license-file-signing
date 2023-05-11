@@ -1,0 +1,17 @@
+{
+   "info":{
+      "date":"2021-08-03 07:49:51",
+      "customer":"TV2",
+      "issuer":"Root",
+      "uid":123
+   },
+   "license":{
+      "keys":[
+         {
+            "name":"J2KHDX",
+            "duration":100,
+            "description":"J2K HD Encoders/Decoders"
+         }
+      ]
+   }
+}
