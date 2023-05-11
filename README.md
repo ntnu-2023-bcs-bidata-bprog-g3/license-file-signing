@@ -1,5 +1,8 @@
 # License File Signer (LFS)
 
+## Important
+There is currently a private key located in this repository. By no means, whatsoever, should this be the case for anyone else. This is only here for simplicity sake so that people can clone and run the different projects wtihout any other necessary steps. 
+
 ## Background
 The license file signer is developed and written as a part of a bachelor's thesis at the University of Science and Technology in Gjøvik, Norway.
 
