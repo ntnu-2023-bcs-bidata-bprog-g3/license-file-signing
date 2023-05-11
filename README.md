@@ -21,4 +21,12 @@ where the `<file_to_sign>` is the *example_license.json* and the `<private_key_f
 
 Finally, select the *example_licecnse.json* and *example_license.json.signature* and compress them to a zip file. The payload is now ready to be used.
 
+The structure should be looking like this:
+
+```
+payload.zip/
+├── license.json
+└── license.json.signature
+```
+
 Alternatively, there is a already signed and ready payload located in the repository, named *example_payload.zip*.
